@@ -1,0 +1,63 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "image.openshift.io/v1",
+            "kind": "ImageStream",
+            "metadata": {
+                "annotations": {
+                    "include.release.openshift.io/ibm-cloud-managed": "true",
+                    "include.release.openshift.io/self-managed-high-availability": "true",
+                    "openshift.io/image.dockerRepositoryCheck": "2025-04-10T12:05:50Z"
+                },
+                "creationTimestamp": "2025-04-10T12:05:39Z",
+                "generation": 2,
+                "name": "cli",
+                "namespace": "openshift",
+                "resourceVersion": "20074",
+                "uid": "670fe88e-2dfb-4d64-8833-c6f342823138"
+            },
+            "spec": {
+                "lookupPolicy": {
+                    "local": false
+                },
+                "tags": [
+                    {
+                        "annotations": null,
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:7c03cf263393e1d099b9f302161fac87a2f2c33bfccae07fdc086a9caa3c9f63"
+                        },
+                        "generation": 2,
+                        "importPolicy": {
+                            "importMode": "PreserveOriginal"
+                        },
+                        "name": "latest",
+                        "referencePolicy": {
+                            "type": "Source"
+                        }
+                    },
+                    {
+                        "annotations": null,
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:7c03cf263393e1d099b9f302161fac87a2f2c33bfccae07fdc086a9caa3c9f63"
+                        },
+                        "generation": 2,
+                        "importPolicy": {
+                            "importMode": "PreserveOriginal"
+                        },
+                        "name": "latest",
+                        "referencePolicy": {
+                            "type": "Source"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

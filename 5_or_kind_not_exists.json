@@ -1,0 +1,253 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "image.openshift.io/v1",
+            "kind": "ImageStream",
+            "metadata": {
+                "annotations": {
+                    "openshift.io/display-name": "Red Hat OpenJDK 8 Runtime (UBI8)",
+                    "openshift.io/image.dockerRepositoryCheck": "2025-04-10T12:05:51Z",
+                    "openshift.io/provider-display-name": "Red Hat, Inc.",
+                    "samples.operator.openshift.io/version": "4.19.0-ec.4"
+                },
+                "creationTimestamp": "2025-04-10T12:05:29Z",
+                "generation": 2,
+                "name": "ubi8-openjdk-8-runtime",
+                "namespace": "openshift",
+                "resourceVersion": "20093",
+                "uid": "28b92d3d-7ac1-4c72-8087-59e910e5605c",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "config.openshift.io/v1",
+                        "controller": true,
+                        "name": "version",
+                        "uid": "88b114b6-6257-4f42-8b4a-10e2d54c23cf"
+                    }
+                ]
+            },
+            "spec": {
+                "lookupPolicy": {
+                    "local": false
+                },
+                "tags": [
+                    {
+                        "annotations": {
+                            "description": "Run Java applications using OpenJDK 8 upon UBI8.",
+                            "iconClass": "icon-rh-openjdk",
+                            "openshift.io/display-name": "Red Hat OpenJDK 8 Runtime (UBI8)",
+                            "tags": "java,openjdk,ubi8",
+                            "version": "1.10"
+                        },
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "registry.access.redhat.com/ubi8/openjdk-8-runtime:1.10"
+                        },
+                        "generation": 2,
+                        "importPolicy": {
+                            "importMode": "Legacy",
+                            "scheduled": false
+                        },
+                        "name": "1.10",
+                        "referencePolicy": {
+                            "type": "Local"
+                        }
+                    },
+                    {
+                        "annotations": {
+                            "description": "Run Java applications using OpenJDK 8 upon UBI8.",
+                            "iconClass": "icon-rh-openjdk",
+                            "openshift.io/display-name": "Red Hat OpenJDK 8 Runtime (UBI8)",
+                            "tags": "java,openjdk,ubi8",
+                            "version": "1.11"
+                        },
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "registry.access.redhat.com/ubi8/openjdk-8-runtime:1.11"
+                        },
+                        "generation": 2,
+                        "importPolicy": {
+                            "importMode": "Legacy"
+                        },
+                        "name": "1.11",
+                        "referencePolicy": {
+                            "type": "Local"
+                        }
+                    },
+                    {
+                        "annotations": {
+                            "description": "Run Java applications using OpenJDK 8 upon UBI8.",
+                            "iconClass": "icon-rh-openjdk",
+                            "openshift.io/display-name": "Red Hat OpenJDK 8 Runtime (UBI8)",
+                            "tags": "java,openjdk,ubi8",
+                            "version": "1.12"
+                        },
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "registry.access.redhat.com/ubi8/openjdk-8-runtime:1.12"
+                        },
+                        "generation": 2,
+                        "importPolicy": {
+                            "importMode": "Legacy"
+                        },
+                        "name": "1.12",
+                        "referencePolicy": {
+                            "type": "Local"
+                        }
+                    },
+                    {
+                        "annotations": {
+                            "description": "Run Java applications using OpenJDK 8 upon UBI8.",
+                            "iconClass": "icon-rh-openjdk",
+                            "openshift.io/display-name": "Red Hat OpenJDK 8 Runtime (UBI8)",
+                            "tags": "java,openjdk,ubi8",
+                            "version": "1.13"
+                        },
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "registry.access.redhat.com/ubi8/openjdk-8-runtime:1.13"
+                        },
+                        "generation": 2,
+                        "importPolicy": {
+                            "importMode": "Legacy"
+                        },
+                        "name": "1.13",
+                        "referencePolicy": {
+                            "type": "Local"
+                        }
+                    },
+                    {
+                        "annotations": {
+                            "description": "Run Java applications using OpenJDK 8 upon UBI8.",
+                            "iconClass": "icon-rh-openjdk",
+                            "openshift.io/display-name": "Red Hat OpenJDK 8 Runtime (UBI8)",
+                            "tags": "java,openjdk,ubi8",
+                            "version": "1.14"
+                        },
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "registry.access.redhat.com/ubi8/openjdk-8-runtime:1.14"
+                        },
+                        "generation": 2,
+                        "importPolicy": {
+                            "importMode": "Legacy"
+                        },
+                        "name": "1.14",
+                        "referencePolicy": {
+                            "type": "Local"
+                        }
+                    },
+                    {
+                        "annotations": {
+                            "description": "Run Java applications using OpenJDK 8 upon UBI8.",
+                            "iconClass": "icon-rh-openjdk",
+                            "openshift.io/display-name": "Red Hat OpenJDK 8 Runtime (UBI8)",
+                            "tags": "java,openjdk,ubi8",
+                            "version": "1.15"
+                        },
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "registry.access.redhat.com/ubi8/openjdk-8-runtime:1.15"
+                        },
+                        "generation": 2,
+                        "importPolicy": {
+                            "importMode": "Legacy"
+                        },
+                        "name": "1.15",
+                        "referencePolicy": {
+                            "type": "Local"
+                        }
+                    },
+                    {
+                        "annotations": {
+                            "description": "Run Java applications using OpenJDK 8 upon UBI8.",
+                            "iconClass": "icon-rh-openjdk",
+                            "openshift.io/display-name": "Red Hat OpenJDK 8 Runtime (UBI8)",
+                            "tags": "java,openjdk,ubi8",
+                            "version": "1.16"
+                        },
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "registry.access.redhat.com/ubi8/openjdk-8-runtime:1.16"
+                        },
+                        "generation": 2,
+                        "importPolicy": {
+                            "importMode": "Legacy"
+                        },
+                        "name": "1.16",
+                        "referencePolicy": {
+                            "type": "Local"
+                        }
+                    },
+                    {
+                        "annotations": {
+                            "description": "Run Java applications using OpenJDK 8 upon UBI8.",
+                            "iconClass": "icon-rh-openjdk",
+                            "openshift.io/display-name": "Red Hat OpenJDK 8 Runtime (UBI8)",
+                            "tags": "java,openjdk,ubi8",
+                            "version": "1.17"
+                        },
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "registry.access.redhat.com/ubi8/openjdk-8-runtime:1.17"
+                        },
+                        "generation": 2,
+                        "importPolicy": {
+                            "importMode": "Legacy"
+                        },
+                        "name": "1.17",
+                        "referencePolicy": {
+                            "type": "Local"
+                        }
+                    },
+                    {
+                        "annotations": {
+                            "description": "Run Java applications using OpenJDK 8 upon UBI8.",
+                            "iconClass": "icon-rh-openjdk",
+                            "openshift.io/display-name": "Red Hat OpenJDK 8 Runtime (UBI8)",
+                            "tags": "java,openjdk,ubi8",
+                            "version": "1.18"
+                        },
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "registry.access.redhat.com/ubi8/openjdk-8-runtime:1.18"
+                        },
+                        "generation": 2,
+                        "importPolicy": {
+                            "importMode": "Legacy"
+                        },
+                        "name": "1.18",
+                        "referencePolicy": {
+                            "type": "Local"
+                        }
+                    },
+                    {
+                        "annotations": {
+                            "description": "Run Java applications using OpenJDK 8 upon UBI8.",
+                            "iconClass": "icon-rh-openjdk",
+                            "openshift.io/display-name": "Red Hat OpenJDK 8 Runtime (UBI8)",
+                            "tags": "java,openjdk,ubi8",
+                            "version": "1.9"
+                        },
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "registry.access.redhat.com/ubi8/openjdk-8-runtime:1.9"
+                        },
+                        "generation": 2,
+                        "importPolicy": {
+                            "importMode": "Legacy"
+                        },
+                        "name": "1.9",
+                        "referencePolicy": {
+                            "type": "Local"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

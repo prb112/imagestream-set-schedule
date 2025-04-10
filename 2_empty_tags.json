@@ -1,0 +1,42 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "image.openshift.io/v1",
+            "kind": "ImageStream",
+            "metadata": {
+                "annotations": {
+                    "include.release.openshift.io/ibm-cloud-managed": "true",
+                    "include.release.openshift.io/self-managed-high-availability": "true",
+                    "openshift.io/image.dockerRepositoryCheck": "2025-04-10T12:05:50Z"
+                },
+                "creationTimestamp": "2025-04-10T12:05:39Z",
+                "generation": 2,
+                "name": "empty",
+                "namespace": "openshift",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "config.openshift.io/v1",
+                        "controller": true,
+                        "kind": "XYZE",
+                        "name": "version",
+                        "uid": "88b114b6-6257-4f42-8b4a-10e2d54c23cf"
+                    }
+                ],
+                "resourceVersion": "20074",
+                "uid": "670fe88e-2dfb-4d64-8833-c6f342823138"
+            },
+            "spec": {
+                "lookupPolicy": {
+                    "local": false
+                },
+                "tags": [
+                ]
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

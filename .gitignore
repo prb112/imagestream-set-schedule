@@ -1,0 +1,4 @@
+multi.ajson
+!*.json
+!_*.sh
+o.orig
