@@ -29,7 +29,7 @@ RESULT=$(cat $2 | \
             or
             (.metadata.ownerReferences?[].kind == null)
             or
-            (.metadata.ownerReferences?[].kind != "ClusterVersion")
+            (isempty(.metadata.ownerReferences?[] | select(.kind == "ClusterVersion")))
         )] | any') 
 
 echo "GOT: ${RESULT}"
