@@ -25,11 +25,11 @@ RESULT=$(cat $2 | \
         (
             (.metadata.ownerReferences == null)
             or
-            (
-                (.metadata.ownerReferences[].kind != null)
-                and
-                (.metadata.ownerReferences[].kind != "ClusterVersion")
-            )
+            (.metadata.ownerReferences | length == 0)
+            or
+            (.metadata.ownerReferences?[].kind == null)
+            or
+            (.metadata.ownerReferences?[].kind != "ClusterVersion")
         )] | any') 
 
 echo "GOT: ${RESULT}"

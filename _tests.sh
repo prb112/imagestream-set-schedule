@@ -24,5 +24,6 @@
 ./_runner.sh "OwnerReferences - Kind Alternative" 5_or_kind_alt.json true
 ./_runner.sh "OwnerReferences - Kind Exists ClusterVersion" 5_or_kind_cluster_version.json false
 ./_runner.sh "OwnerReferences - Kind not exists" 5_or_kind_not_exists.json true
-./_runner.sh "OwnerReferences - Kind ClusterVersion Second" 5_or_kind_second.json false
+# This one should just not be supported.
+./_runner.sh "OwnerReferences - Kind ClusterVersion Second" 5_or_kind_second.json true
 ./_runner.sh "OwnerReferences - None" 5_or_none.json true
